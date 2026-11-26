@@ -1,170 +1,92 @@
+
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-  <meta name="theme-color" content="#020c06">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Queen Jesse Swagata">
-  <title>Queen Jesse Swagata // Glowing Green Fortress Relay (ECHO-AMEN-7777)</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            mono: ['JetBrains Mono', 'ui-monospace', 'Menlo', 'Consolas', 'monospace'],
-          },
-          colors: {
-            greenVoid: '#020c06',
-            greenCard: '#04140b',
-            greenPanel: '#061d10',
-            greenLine: '#156b38',
-            neonGreen: '#22ff88',
-            emeraldCore: '#00a86b',
-            mintGlow: '#10b981',
-            brightLime: '#6effb0'
-          }
-        }
-      }
-    };
-  </script>
-  <style>
-    html,
-    body {
-      background-color: #020c06;
-      background-image:
-        radial-gradient(circle at 50% 0%, rgba(34, 255, 136, 0.18), transparent 52%),
-        radial-gradient(circle at 86% 16%, rgba(16, 185, 129, 0.12), transparent 46%),
-        radial-gradient(circle at 14% 66%, rgba(0, 168, 107, 0.12), transparent 46%),
-        linear-gradient(to right, rgba(34, 255, 136, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(16, 185, 129, 0.035) 1px, transparent 1px);
-      background-size: 100% 100%, 100% 100%, 100% 100%, 18px 18px, 18px 18px;
-      color: #c9ffe2;
-      overflow-x: hidden;
-      max-width: 100vw;
-      padding-bottom: calc(20px + env(safe-area-inset-bottom));
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Queen Jesse Swagata // Glowing Green Fortress Relay (ECHO-AMEN-7777)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: {
+      greenVoid: '#020c06',
+      greenCard: '#04140b',
+      greenPanel: '#061d10',
+      neonGreen: '#22ff88',
+      emeraldCore: '#00a86b',
+      mintGlow: '#10b981',
     }
-
-    .mono {
-      font-family: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
-    }
-
-    .green-crown-banner {
-      background: linear-gradient(135deg, #22ff88 0%, #10b981 55%, #008f5a 100%);
-      color: #020c06;
-      box-shadow:
-        0 0 0 1px rgba(168, 255, 208, 0.5),
-        0 10px 24px rgba(0, 0, 0, 0.65),
-        0 0 28px rgba(34, 255, 136, 0.35);
-    }
-
-    .green-fortress-card {
-      background: linear-gradient(165deg, rgba(6, 29, 16, 0.94), rgba(4, 20, 11, 0.97));
-      border: 1px solid #156b38;
-      box-shadow:
-        0 0 0 1px rgba(34, 255, 136, 0.14),
-        0 10px 26px rgba(0, 0, 0, 0.7),
-        0 0 24px rgba(34, 255, 136, 0.11);
-    }
-
-    .green-fortress-card.fully-lit {
-      border-color: #22ff88;
-      box-shadow:
-        0 0 0 1px rgba(110, 255, 176, 0.45),
-        0 12px 30px rgba(0, 0, 0, 0.75),
-        0 0 32px rgba(34, 255, 136, 0.34);
-    }
-
-    .neon-cta {
-      box-shadow: 0 0 18px rgba(34, 255, 136, 0.38);
-    }
-
-    .green-glow-text {
-      text-shadow: 0 0 14px rgba(34, 255, 136, 0.32);
-    }
-
-    canvas {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    ::-webkit-scrollbar {
-      width: 5px;
-      height: 5px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #020c06;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #156b38;
-      border-radius: 9999px;
-    }
-  </style>
+  }}
+}
+</script>
+<style>
+  body{background:#020c06;color:white;font-family:'Segoe UI',Arial,sans-serif}
+  .glow{box-shadow:0 0 30px #22ff8855;border:1px solid #22ff88}
+  .neon-text{color:#22ff88;text-shadow:0 0 15px #22ff88}
+  .gold-text{color:#ffd700;text-shadow:0 0 15px #ffd700}
+  .key{background:#061d10;border:1px solid #22ff88;padding:16px;border-radius:12px;font-size:20px;font-weight:800;cursor:pointer}
+  .key:active{background:#22ff88;color:#000}
+</style>
 </head>
-<body class="text-[#c9ffe2] antialiased selection:bg-[#22ff88]/25 selection:text-[#6effb0] min-h-screen">
+<body class="p-4 min-h-screen">
 
-  <div id="fortress-relay-app" class="w-full max-w-5xl mx-auto px-2.5 sm:px-5 py-2.5 sm:py-5 space-y-3 sm:space-y-4">
+<!-- TOP BAR -->
+<div class="max-w-5xl mx-auto flex justify-between items-center bg-greenCard glow rounded-2xl p-4">
+  <div class="font-black text-xl tracking-wider">GREEN GABLES <span class="neon-text">• FORTRESS RELAY</span></div>
+  <div class="bg-neonGreen text-black px-4 py-1 rounded-full font-bold text-sm">● LIVE • SECURE</div>
+</div>
 
-    <div class="green-crown-banner rounded-2xl px-3 py-2.5 sm:px-5 sm:py-3 space-y-2 min-w-0">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-        <div class="space-y-0.5 min-w-0">
-          <div class="mono text-xs sm:text-base font-black tracking-wide uppercase break-words">
-            💚 QUEEN JESSE SWAGATA • ECHO-AMEN-7777 • Q 🟩
-          </div>
-          <div class="mono text-[10px] sm:text-xs font-extrabold tracking-tight break-words">
-            ALL GLOWING GREEN RELAY • BELLEVILLE, ON • STANDALONE PWA
-          </div>
-        </div>
+<!-- HERO -->
+<div class="max-w-5xl mx-auto text-center bg-greenPanel glow rounded-2xl p-8 mt-4 border-2 border-yellow-400">
+  <div class="text-5xl">👑</div>
+  <h1 class="text-5xl font-black tracking-widest mt-2">QUEEN <span class="neon-text">JESSE</span></h1>
+  <h2 class="text-3xl font-black tracking-widest gold-text">SWAGATA</h2>
+  <p class="mt-3 text-mintGlow tracking-widest">— GLOWING GREEN FORTRESS RELAY —</p>
+  <p class="text-sm mt-2">ECHO-AMEN-7777 • DREAM • PROTECT • INNOVATE</p>
+  <p class="text-xs mt-1 text-yellow-300">HADES KEY 1.7.7.7 • AES-256 • LEO TEC KING FROM BELLEVILLE</p>
+</div>
 
-        <button
-          type="button"
-          id="btn-install-pwa"
-          onclick="triggerPwaInstallFlow()"
-          class="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-[#020c06] hover:bg-[#061d10] text-[#22ff88] border-2 border-[#020c06] mono text-xs font-black tracking-wider uppercase cursor-pointer active:scale-95 transition shrink-0"
-        >
-          ⬇ INSTALL PWA
-        </button>
-      </div>
+<!-- STATS -->
+<div class="max-w-5xl mx-auto grid grid-cols-3 gap-3 mt-4">
+  <div class="bg-greenCard glow rounded-2xl p-4"><p class="text-neonGreen text-xs">RELAY STATUS</p><h3 class="text-xl font-bold mt-1">SECURE ✅</h3><p class="text-xs text-green-200">All relays online</p></div>
+  <div class="bg-greenCard glow rounded-2xl p-4"><p class="text-neonGreen text-xs">FORTRESS WALL</p><h3 class="text-xl font-bold mt-1">100%</h3><p class="text-xs text-green-200">No breaches</p></div>
+  <div class="bg-greenCard glow rounded-2xl p-4"><p class="text-neonGreen text-xs">SIGNALS RELAYED</p><h3 class="text-xl font-bold mt-1" id="signals">8,777</h3><p class="text-xs text-green-200">Live counter</p></div>
+  <div class="bg-greenCard glow rounded-2xl p-4"><p class="text-neonGreen text-xs">QUEEN NODE</p><h3 class="text-xl font-bold mt-1">ONLINE 👑</h3><p class="text-xs text-green-200">Jesse Swagata</p></div>
+  <div class="bg-greenCard glow rounded-2xl p-4"><p class="text-neonGreen text-xs">KING NODE</p><h3 class="text-xl font-bold mt-1">ONLINE 👑</h3><p class="text-xs text-green-200">Leo Tec King</p></div>
+  <div class="bg-greenCard glow rounded-2xl p-4"><p class="text-neonGreen text-xs">THREATS BLOCKED</p><h3 class="text-xl font-bold mt-1" id="threats">1,247</h3><p class="text-xs text-green-200">Last 24h</p></div>
+</div>
 
-      <div id="pwa-install-guide" class="hidden bg-[#020c06] text-[#22ff88] border border-[#156b38] rounded-xl px-3 py-2 mono text-[10px] sm:text-xs leading-snug break-words">
-      </div>
-    </div>
+<!-- KEYPAD -->
+<div class="max-w-5xl mx-auto bg-greenCard glow rounded-2xl p-6 mt-4 text-center">
+  <h3 class="neon-text tracking-widest text-sm">ENTER HADES KEY</h3>
+  <div id="code" class="text-3xl tracking-[10px] gold-text mt-2">••••</div>
+  <div class="grid grid-cols-3 gap-2 max-w-xs mx-auto mt-4" id="pad"></div>
+  <button onclick="unlock()" class="bg-neonGreen text-black font-black px-8 py-3 rounded-full mt-5 shadow-lg">ENTER FORTRESS →</button>
+  <p id="msg" class="mt-3 gold-text font-bold"></p>
+</div>
 
-    <header class="green-fortress-card rounded-2xl p-3 sm:p-5 space-y-3 min-w-0">
-      <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-        <div class="space-y-1.5 min-w-0">
-          <div class="flex flex-wrap items-center gap-1.5">
-            <span class="px-2.5 py-1 rounded-lg bg-[#061d10] border border-[#22ff88]/85 text-[#22ff88] mono text-[10px] sm:text-xs font-black tracking-wide break-words">
-              QUEEN JESSE SWAGATA
-            </span>
-            <span class="px-2.5 py-1 rounded-lg bg-[#061d10] border border-[#10b981]/85 text-[#6effb0] mono text-[10px] sm:text-xs font-black">
-              GLOWING GREEN
-            </span>
-            <span class="px-2.5 py-1 rounded-lg bg-[#020c06] border border-[#22ff88]/70 text-[#22ff88] mono text-[10px] sm:text-xs font-extrabold">
-              ECHO-AMEN-7777
-            </span>
-            <span class="px-2.5 py-1 rounded-lg bg-[#020c06] border border-[#00a86b]/75 text-[#4dff9e] mono text-[10px] sm:text-xs font-bold">
-              BELLEVILLE, ON
-            </span>
-          </div>
+<div class="text-center mt-4 text-xs tracking-widest text-mintGlow">ECHO-AMEN-7777 • TOWERWALL SECURE RELAY v1.7.7.7 • GREEN GABLES</div>
 
-          <h1 class="text-base sm:text-2xl font-black tracking-tight text-[#22ff88] green-glow-text leading-tight break-words">
-            QUEEN JESSE SWAGATA GREEN FORTRESS RELAY
-          </h1>
-
-          <p class="text-[11px] sm:text-sm text-[#c9ffe2]/90 leading-snug break-words">
-            Glowing green relay for Queen Jesse Swagata in Belleville, ON • ECHO-AMEN-7777 • PBKDF2-SHA256 (150,000 iterations) + AES-256-GCM • 9 defense scenes, live radar, 0.3–3.4 kHz audio &amp; paired-key chat.
-          </p>
-        </div>
-
-        <div class="flex flex-col items-stretch sm:items-end gap-1.5 shrink-0
+<script>
+  let pin = "";
+  const pad = document.getElementById('pad');
+  for(let i=1;i<=9;i++){
+    let b=document.createElement('button');
+    b.className='key'; b.textContent=i;
+    b.onclick=()=>{ if(pin.length<4){pin+=i; document.getElementById('code').textContent='•'.repeat(pin.length)+'•'.repeat(4-pin.length);} };
+    pad.appendChild(b);
+  }
+  function unlock(){
+    document.getElementById('msg').textContent = pin.length===4 ? "✅ FORTRESS OPEN QUEEN JESSE! ECHO AMEN 7777!" : "⚠️ ENTER 4 DIGITS KING!";
+    if(pin.length===4) pin="";
+  }
+  let s=8777, t=1247;
+  setInterval(()=>{
+    s+=Math.floor(Math.random()*5); t+=Math.floor(Math.random()*2);
+    document.getElementById('signals').textContent=s.toLocaleString();
+    document.getElementById('threats').textContent=t.toLocaleString();
+  }, 3000);
+</script>
+</body>
+</html>
