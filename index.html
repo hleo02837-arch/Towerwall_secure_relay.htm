@@ -1,27 +1,2 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GREEN GABLES - DREAMER ROYAL GUARDIAN</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
-body{background:#02120a;min-height:100vh;display:flex;justify-content:center;padding:18px 10px 30px;color:#fff}
-.wrap{width:100%;max-width:430px}
-.top{border:2px solid #c9a227;border-radius:22px;padding:14px 14px 18px;background:radial-gradient(circle at 50% 0%,#0a2e1a,#02120a 70%);box-shadow:0 0 40px rgba(34,255,136,.25);text-align:center}
-.top small{color:#c9a227;letter-spacing:4px;font-size:11px;font-weight:900}
-.top h1{color:#fff;font-size:28px;letter-spacing:3px;margin:4px 0 2px}
-.top p{color:#d4af37;font-size:11px;letter-spacing:2px}
-.shield{width:112px;height:112px;margin:14px auto 6px;border:3px solid #c9a227;border-radius:50%;background:radial-gradient(circle,#0f3d24,#02120a);display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 0 25px rgba(212,175,55,.4)}
-.shield .crown{font-size:34px}
-.shield .apple{font-size:46px;margin-top:-6px}
-.shield .star{color:#c9a227;font-size:18px;margin-top:-4px}
-.dreamer{font-size:44px;font-weight:900;letter-spacing:6px;color:#fff;text-shadow:0 0 18px rgba(255,255,255,.4)}
-.royal{color:#c9a227;letter-spacing:5px;font-size:13px;font-weight:900;margin:2px 0 14px}
-.divider{height:1px;background:#c9a227;opacity:.6;margin:10px 0}
-.enter{letter-spacing:3px;font-size:13px;font-weight:900}
-.dots{display:flex;gap:10px;justify-content:center;margin:16px 0}
-.dot{width:18px;height:18px;border-radius:50%;border:2px solid #c9a227;background:#02120a}
-.dot.on{background:#c9a227;box-shadow:0 0 12px #c9a227}
-.keylabel{color:#c9a227
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DREAMER - ROYAL GUARDIAN</title><style>*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}body{background:#02120a;display:flex;justify-content:center;padding:16px 10px;color:#fff}.w{width:100%;max-width:430px;text-align:center}.t{border:2px solid #c9a227;border-radius:22px;padding:14px;background:#041a0e;box-shadow:0 0 35px rgba(34,255,136,.25)}.t small{color:#c9a227;letter-spacing:4px;font-size:11px;font-weight:900}.t h1{font-size:26px;letter-spacing:2px;margin:4px 0}.s{width:110px;height:110px;margin:12px auto;border:3px solid #c9a227;border-radius:50%;background:#0a2e1a;display:flex;align-items:center;justify-content:center;font-size:52px}.d{font-size:42px;font-weight:900;letter-spacing:6px}.r{color:#c9a227;letter-spacing:5px;font-size:13px;font-weight:900}.e{margin:12px 0 8px;letter-spacing:3px;font-size:13px;font-weight:900}.dots{display:flex;gap:9px;justify-content:center;margin:12px 0}.dot{width:17px;height:17px;border-radius:50%;border:2px solid #c9a227}.dot.on{background:#c9a227}.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}.k{height:60px;border-radius:14px;border:1.5px solid #c9a227;background:#071f12;color:#fff;font-size:26px;font-weight:900}.k:active{background:#c9a227;color:#02120a}.b{margin-top:14px;color:#c9a227;letter-spacing:3px;font-size:12px;font-weight:900}.st{margin-top:12px;border:1.5px solid #c9a227;border-radius:14px;padding:10px}.st p{color:#c9a227;font-size:12px}.st h3{margin-top:5px;font-size:14px}#m{min-height:22px;color:#7dffb0;font-weight:900;margin-top:8px}</style></head><body><div class="w"><div class="t"><small>GREEN GABLES</small><h1>Apple Towerwall system</h1><p style="color:#c9a227">★★★★★</p><div class="s">👑🍏</div><div class="d">DREAMER</div><div class="r">— ROYAL GUARDIAN —</div><hr style="border:1px solid #c9a227;margin:10px 0"><div class="e">ENTER HADES KEY</div><div class="dots" id="dots"></div><div style="color:#c9a227;letter-spacing:3px;font-size:12px;font-weight:900">HADES KEY 1.7.7.7</div><div class="pad" id="pad"></div><div style="color:#c9a227;font-size:12px">👆 BIOMETRIC • HEARTBEAT VERIFIED</div><div id="m"></div></div><div class="b">DREAM • PROTECT • INNOVATE</div><div class="st"><p>STATUS: FORTRESS SECURE</p><h3 id="s">AWAITING HADES KEY...</h3></div></div><script>let c="";const d=document.getElementById("dots"),m=document.getElementById("m"),s=document.getElementById("s"),p=document.getElementById("pad");function r(){d.innerHTML="";for(let i=0;i<10;i++){let e=document.createElement("div");e.className="dot"+(i<c.length?" on":"");d.appendChild(e)}}function f(k){if(k==="×")c="";else if(k==="⌫")c=c.slice(0,-1);else if(c.length<10)c+=k;r();if(c==="1777"){m.textContent="✅ FORTRESS OPEN DREAMER! ECHO AMEN 7777!";s.textContent="ACCESS GRANTED - WELCOME DREAMER 👑"}else if(c.length>=4){m.textContent="";s.textContent="AWAITING HADES KEY..."}}["1","2","3","4","5","6","7","8","9","×","0","⌫"].forEach(k=>{let b=document.createElement("button");b.className="k";b.textContent=k;b.onclick=()=>f(k);p.appendChild(b)});r();</script></body></html>
